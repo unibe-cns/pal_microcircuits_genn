@@ -1,0 +1,109 @@
+- backend: CUDA
+  dataset_key: mnist
+  dt: 0.01
+  input_rates: null
+  name: sweep_mnist_backw_seed_123457
+  numpy_seed: 123457
+  output_rates: null
+  print_every_n_recs: 1000000
+  record:
+    filename: null
+    recordings:
+      1:
+        fb:
+        - g
+        i2p:
+        - g
+        inter:
+        - rate
+        p2i:
+        - g
+        pyramidal:
+        - rate
+      2:
+        ff:
+        - g
+        output:
+        - v_brev
+        - rate
+      3:
+        supervisor:
+        - rate
+    update_indices:
+      rates: null
+      sample: null
+      test: null
+      train: null
+      valid: null
+      weights: null
+      write: null
+  sim_config:
+    data_noise: 0
+    data_seed: 9876543
+    idx_epoch: null
+    idx_rec: null
+    idx_sample: null
+    idx_test: null
+    idx_train: null
+    idx_valid: null
+    n_class: 10
+    n_epochs: 100
+    n_test: 1000
+    n_train: 5000
+    n_valid: 1000
+    pat_t: 1.0
+    recs_per_sample: 5
+    shuffle_samples: true
+    sim_time: null
+    uhigh: 1.0
+    ulow: 0.1
+- activation_template: sigmoid
+  alpha: 1.0e-06
+  bias:
+    'on': false
+    val: 0.0
+  debug_mode: false
+  dims:
+  - 784
+  - 100
+  - 10
+  eta:
+    down:
+    - 0.0
+    - 0.2
+    ip:
+    - 0.02
+    - 0
+    pi:
+    - 0.02
+    - 0
+    up:
+    - 1.0
+    - 0.005
+  ga: 0.06
+  gb: 0.1
+  gd: 0.1
+  gl: 0.03
+  gsom: 0.06
+  gtar: 0.06
+  highpass_tau: 0.1
+  init_weights:
+    down: 1
+    ip: 0.1
+    pi: 1
+    up: 0.1
+  le_active: 1
+  learning_lag: 0
+  noise: 0
+  noise_sig: 0.01
+  noise_tau: 0.1
+  out_lag: 0
+  reinforce_self_predict: false
+  reset_deltas: false
+  set_wBackw_to_wTransp: false
+  start_in_self_predict: true
+  t_pattern: 1.0
+  tau_0: 0.01
+  tau_w_ff: 100.0
+  tau_w_ip: 0.01
+  tau_w_pi: 0.01

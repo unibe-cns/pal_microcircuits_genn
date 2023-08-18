@@ -9,9 +9,8 @@ extended by the [Latent Equilibrium-](https://proceedings.neurips.cc/paper_files
 PAL-mechanisms.
 
 ## Base model
-The basis of this repository was a **[GeNN](https://github.com/genn-team/genn)** based implementation of the **[Dendritic cortical microcircuits 
-approximate the backpropagation algorithm](https://papers.nips.cc/paper/2018/hash/1dc3a89d0d440ba31729b0ba74b93a33-Abstract.html)** paper by
-[Gary Garcia](https://github.com/chanokin).
+The basis of this repository was [Gary Garcia's](https://github.com/chanokin) [GeNN](https://github.com/genn-team/genn) based implementation of the [Dendritic cortical microcircuits 
+approximate the backpropagation algorithm](https://papers.nips.cc/paper/2018/hash/1dc3a89d0d440ba31729b0ba74b93a33-Abstract.html) paper.
 It included the GeNN-specific implementation of neuron and synapse dynamics as
 well as the network structure and recording infrastructure. Since this code is
 still under active development, the original repository is not publically
