@@ -95,7 +95,7 @@ export PYTHONPATH=/users/.../pal_microcircuits_genn
 
 #### Config files
 
-- All config files are saved in `examples/experiment_configs/` as yaml files
+- Config files are located in `examples/experiment_configs/` as yaml files
 - To create a new one copy an existing yaml file and adapt the content
 - To generate a set of config files for a sweep over seeds use the
   `generate_sweep_cfg_files.py`.
@@ -110,4 +110,19 @@ export PYTHONPATH=/users/.../pal_microcircuits_genn
   define how it should be loaded in the Experiment class in the function
   `load_dataset()`.
 
+#### Recreate paper plots
+
+- All config files required to recreate the figures in the paper are stored in
+  the `examples/experiment_configs/` directory.
+- To create the yin-yang dataset comparison between FA and PAL run an experiment for all config
+  files in the directories `examples/experiment_configs/sweep_yin_yang_fa/` and `examples/experiment_configs/sweep_yin_yang_backw/`
+- To create the mnist dataset comparison between FA and PAL run an experiment for all config
+  files in the directories `examples/experiment_configs/sweep_mnist_fa/` and `examples/experiment_configs/sweep_mnist_backw/`
+- To create the supplementary plot that compares PAL with a PAL run where the
+  feedback-weight learning rate is set to zero (to exclude that the advantage
+  over FA is due to noise) run an experiment for all config files in the directories `examples/experiment_configs/sweep_yin_yang_bw_eta_zero/`
+  and `examples/experiment_configs/sweep_yin_yang_backw/`
+- To evaluate the sweeps and create summary plots and data use the
+  `examples/evaluate_sweep.py` script. For that assemble all results-directories to be
+  evaluated in a list in a .txt file.
 
