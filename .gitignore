@@ -1,0 +1,17 @@
+.ipynb*
+microcircuits/*.e*
+microcircuits/*.o*
+*.pyc
+**/__pycache__/
+**/venv/
+**/venv3/
+**/.idea/
+**/*.egg-info
+**/*_CODE/
+**/examples/**/*.pdf
+**/examples/**/*.png
+**/*.npz
+**/*.txt
+**/*.h5
+./*pdf
+
